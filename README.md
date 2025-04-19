@@ -17,14 +17,16 @@
 
 ```bash
 pip install -r requirements.txt
-
+```
 ## 2. تدريب النموذج (اختياري إذا أردت إعادة التدريب)
+```bash
 python train_model.py
-
+```
 ## 3. تشغيل مشروع Django
+```bash
 cd backend-django\ and\ api\spam_project_ready_v1
 python manage.py runserver
-
+```
 ## 📊 مخطط توضيحي لتدفق البيانات (Mermaid)
 flowchart TD
     A[قراءة بيانات CSV] --> B[معالجة البيانات]
@@ -33,6 +35,7 @@ flowchart TD
     D --> E[تخزين النموذج والـ Vectorizer]
     E --> F[واجهة Django لعرض النتائج]
 ## 📂 هيكلية المشروع (ملخص)
+```bash
 spam_clf/
 ├── backend-django and api/
 │   └── spam_project_ready_v1/
@@ -47,7 +50,7 @@ spam_clf/
 ├── train_model.py
 ├── README.md
 ├── requirements.txt
-
+```
 ## 👥 أعضاء الفريق
 YousefALsawraqie 
 Tameem-Alyameni
