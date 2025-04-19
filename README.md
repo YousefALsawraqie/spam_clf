@@ -97,7 +97,14 @@ docker-compose up --build
 ### المخطط البياني يوضح المخطط التالي سير العملية داخل المشروع(Mermaid):
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'fontFamily': 'Arial'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': {
+  'fontFamily': 'Arial',
+  'primaryColor': '#FFD700',       /* أصفر ذهبي */
+  'primaryBorderColor': '#FFA500', /* برتقالي */
+  'primaryTextColor': '#000000',   /* أسود */
+  'secondaryColor': '#87CEEB',     /* أزرق فاتح */
+  'tertiaryColor': '#98FB98'       /* أخضر فاتح */
+}}}%%
 flowchart TD
     A["المستخدم يُدخل رسالة نصية"] --> B["الواجهة الأمامية (Frontend) ترسل الطلب إلى واجهة API"]
     B --> C["خادم API يستقبل الرسالة عبر Endpoint محدد"]
