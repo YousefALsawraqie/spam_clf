@@ -1,0 +1,6 @@
+flowchart TD
+    A[User Submits Message] --> B[Frontend sends request to API]
+    B --> C[API receives message]
+    C --> D[Message passed to ML model]
+    D --> E[Model returns prediction (Spam or Ham)]
+    E --> F[API returns result to frontend]
